@@ -48,6 +48,26 @@ var LinkedList = function() {
   list.contains = function(target) {
     //i: target node
     //o: boolean
+    //if linked list is empty
+        //return false
+//for each node starting at the beginning
+    //if node doesn't exist
+        //return false
+    //else
+        //return node
+
+    if (list.head === null) {
+      return false;
+    }
+    var curNode = list.head;
+    while (curNode !== null) {
+      console.log('current node:', curNode.value);
+      if (curNode.value === target) {
+        return true;
+      }
+      curNode = curNode.next;
+    }
+    return false;
   };
 
   return list;

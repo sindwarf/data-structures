@@ -4,7 +4,7 @@ var Queue = function() {
   this.storage = {};
 };
 
-var instance = new Queue();
+//var instance = new Queue();
 
 Queue.prototype.size = function() {
   return Object.keys(this.storage).length;
